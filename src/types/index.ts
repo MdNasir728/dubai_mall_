@@ -42,3 +42,10 @@ export interface BrandItem {
   tier: "ultra-luxury" | "luxury" | "premium" | "lifestyle";
   category: string;
 }
+
+export interface DiningVenue {
+  name: string;
+  cuisine: string;
+  description: string;
+  highlight: string;
+}

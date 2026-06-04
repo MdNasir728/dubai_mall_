@@ -7,10 +7,10 @@ import { useEffect } from "react";
 import { WhyDubaiMallSection } from "@/components/sections/whyDubaiMallSection/WhyDubaiMallSection";
 import { RetailSection } from "@/components/sections/RetailSection/RetailSection";
 import { LuxuryDistrictSection } from "@/components/sections/LuxuryDistrictSection/LuxuryDistrictSection";
+import { DiningSection } from "@/components/sections/DiningSection/DiningSection";
 
 function App() {
   useLenis();
-
   useEffect(() => {
     document.documentElement.classList.add("dark");
     document.title = "Dubai Mall — The World's Destination";
@@ -24,6 +24,7 @@ function App() {
         <WhyDubaiMallSection />
         <RetailSection />
         <LuxuryDistrictSection />
+        <DiningSection />
       </main>
       <Footer />
     </div>
