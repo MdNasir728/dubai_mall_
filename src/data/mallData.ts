@@ -1,4 +1,4 @@
-import type { BrandItem, DiningVenue, NavSection } from "@/types";
+import type { BrandItem, DiningVenue, EntertainmentAttraction, EventCapability, NavSection } from "@/types";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -173,5 +173,88 @@ export const DINING_VENUES: DiningVenue[] = [
     description:
       "Nobu Matsuhisa's legendary concept. Black cod miso and signature cocktails.",
     highlight: "Global Icon",
+  },
+];
+
+export const ENTERTAINMENT_ATTRACTIONS: EntertainmentAttraction[] = [
+  {
+    name: "Dubai Aquarium",
+    description:
+      "10 million litre tank holding over 33,000 aquatic animals. The world's largest suspended aquarium.",
+    highlight: "33,000 Marine Animals",
+    icon: "🐠",
+  },
+  {
+    name: "Dubai Ice Rink",
+    description:
+      "Olympic-size ice rink in the heart of the mall. Figure skating shows and public sessions.",
+    highlight: "Olympic Standard",
+    icon: "⛸️",
+  },
+  {
+    name: "Dubai Fountain",
+    description:
+      "The world's largest choreographed fountain system. 6,600 lights, 25 colour projectors.",
+    highlight: "World's Largest Fountain",
+    icon: "⛲",
+  },
+  {
+    name: "VR Park",
+    description:
+      "Dubai's largest virtual reality theme park. 30+ unique VR and augmented reality experiences.",
+    highlight: "30+ VR Experiences",
+    icon: "🎮",
+  },
+  {
+    name: "KidZania",
+    description:
+      "An award-winning edutainment centre where children can experience over 40 real-world professions.",
+    highlight: "Award-Winning Experience",
+    icon: "🎭",
+  },
+  {
+    name: "Reel Cinemas",
+    description:
+      "22 state-of-the-art screens including IMAX, 4DX, and VIP private screening rooms.",
+    highlight: "22 Screens",
+    icon: "🎬",
+  },
+];
+
+
+export const EVENT_TYPES = [
+  { label: "Brand Activations", count: "240+", desc: "Annual campaigns" },
+  { label: "Fashion Shows", count: "18", desc: "International showcases" },
+  { label: "Concerts & Gigs", count: "120+", desc: "Live performances" },
+  { label: "Product Launches", count: "95+", desc: "Global reveals" },
+  { label: "Art Exhibitions", count: "35", desc: "Cultural showcases" },
+  { label: "Sports Events", count: "50+", desc: "World-class competitions" },
+];
+
+export const PAST_BRANDS = [
+  "Lamborghini", "Ferrari", "Apple", "Samsung", "Rolex", "Dior",
+  "Netflix", "PlayStation", "Adidas", "Nike", "Bulgari", "TAG Heuer",
+];
+
+export const EVENT_CAPABILITIES: EventCapability[] = [
+  {
+    name: "Grand Atrium",
+    capacity: "5,000 guests",
+    description: "Four-storey glass-roofed atrium — spectacular for brand launches, fashion shows, and galas.",
+  },
+  {
+    name: "Dubai Fountain Boardwalk",
+    capacity: "Unlimited outdoor",
+    description: "Iconic waterfront promenade perfect for concerts, activations, and experiential marketing.",
+  },
+  {
+    name: "Convention Halls",
+    capacity: "2,500 delegates",
+    description: "Fully equipped halls for international conferences, product launches, and trade events.",
+  },
+  {
+    name: "Luxury Event Suites",
+    capacity: "50–500 guests",
+    description: "Bespoke private event spaces for VIP dinners, brand experiences, and exclusive showcases.",
   },
 ];

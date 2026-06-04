@@ -3,10 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
-import {
-  staggerContainer,
-  cardReveal,
-} from "@/constants/animations";
+import { staggerContainer, cardReveal } from "@/constants/animations";
 import { RETAIL_HIGHLIGHTS } from "@/data/mallData";
 import { TenantMix } from "./TenantCard";
 
@@ -33,9 +30,7 @@ export function RetailSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
         <ScrollReveal className="mb-20">
-          <p className="text-label mb-4 text-gold">
-            02 — RETAIL PLATFORM
-          </p>
+          <p className="text-label mb-4 text-gold">02 — RETAIL PLATFORM</p>
           <h2 className="section-headline text-foreground max-w-4xl">
             The World's <span className="text-gold-gradient">Most Desired</span>
             <br />
@@ -94,9 +89,7 @@ export function RetailSection() {
                 />
                 <div className="absolute inset-0 cinematic-overlay" />
                 <div className="absolute top-4 right-4">
-                  <span
-                    className="glass-gold px-3 py-1.5 rounded-sm text-xs font-medium text-gold"
-                  >
+                  <span className="glass-gold px-3 py-1.5 rounded-sm text-xs font-medium text-gold">
                     {item.stat}
                   </span>
                 </div>
@@ -119,4 +112,3 @@ export function RetailSection() {
     </section>
   );
 }
-

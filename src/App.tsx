@@ -8,6 +8,8 @@ import { WhyDubaiMallSection } from "@/components/sections/whyDubaiMallSection/W
 import { RetailSection } from "@/components/sections/RetailSection/RetailSection";
 import { LuxuryDistrictSection } from "@/components/sections/LuxuryDistrictSection/LuxuryDistrictSection";
 import { DiningSection } from "@/components/sections/DiningSection/DiningSection";
+import { EntertainmentSection } from "@/components/sections/EntertainmentSection/EntertainmentSection";
+import { EventsSection } from "./components/sections/EventsSection/EventsSection";
 
 function App() {
   useLenis();
@@ -25,6 +27,8 @@ function App() {
         <RetailSection />
         <LuxuryDistrictSection />
         <DiningSection />
+        <EntertainmentSection />
+        <EventsSection />
       </main>
       <Footer />
     </div>

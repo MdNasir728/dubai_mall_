@@ -49,3 +49,17 @@ export interface DiningVenue {
   description: string;
   highlight: string;
 }
+
+export interface EntertainmentAttraction {
+  name: string;
+  description: string;
+  highlight: string;
+  icon: string;
+}
+
+
+export interface EventCapability {
+  name: string;
+  capacity: string;
+  description: string;
+}
