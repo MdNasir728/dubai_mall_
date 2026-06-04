@@ -153,9 +153,7 @@ export function HeroSection() {
           className="relative mb-16 max-w-3xl"
         >
           {/* Glass background */}
-          <div
-            className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.1] backdrop-blur-2xl px-8 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.35)]"
-          >
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.1] backdrop-blur-2xl px-8 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             {/* Ambient gradient glow */}
             <div
               className="absolute inset-0 opacity-40 pointer-events-none"

@@ -36,3 +36,9 @@ export interface ScrollRevealProps {
   className?: string;
   once?: boolean;
 }
+
+export interface BrandItem {
+  name: string;
+  tier: "ultra-luxury" | "luxury" | "premium" | "lifestyle";
+  category: string;
+}

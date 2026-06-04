@@ -6,6 +6,7 @@ import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
 import { WhyDubaiMallSection } from "@/components/sections/whyDubaiMallSection/WhyDubaiMallSection";
 import { RetailSection } from "@/components/sections/RetailSection/RetailSection";
+import { LuxuryDistrictSection } from "@/components/sections/LuxuryDistrictSection/LuxuryDistrictSection";
 
 function App() {
   useLenis();
@@ -22,6 +23,7 @@ function App() {
         <HeroSection />
         <WhyDubaiMallSection />
         <RetailSection />
+        <LuxuryDistrictSection />
       </main>
       <Footer />
     </div>

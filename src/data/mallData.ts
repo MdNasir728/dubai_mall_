@@ -1,4 +1,4 @@
-import type { NavSection } from "@/types";
+import type { BrandItem, NavSection } from "@/types";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -119,4 +119,24 @@ export const TENANT_CATEGORIES = [
   { name: "Lifestyle & Sport", count: "180+", bar: 55 },
   { name: "Electronics & Tech", count: "60+", bar: 35 },
   { name: "Beauty & Wellness", count: "90+", bar: 45 },
+];
+
+
+export const LUXURY_BRANDS: BrandItem[] = [
+  { name: "Louis Vuitton", tier: "ultra-luxury", category: "Fashion" },
+  { name: "Chanel", tier: "ultra-luxury", category: "Fashion" },
+  { name: "Hermès", tier: "ultra-luxury", category: "Fashion" },
+  { name: "Rolex", tier: "ultra-luxury", category: "Watches" },
+  { name: "Cartier", tier: "ultra-luxury", category: "Jewellery" },
+  { name: "Dior", tier: "ultra-luxury", category: "Fashion" },
+  { name: "Valentino", tier: "luxury", category: "Fashion" },
+  { name: "Gucci", tier: "luxury", category: "Fashion" },
+  { name: "Prada", tier: "luxury", category: "Fashion" },
+  { name: "Versace", tier: "luxury", category: "Fashion" },
+  { name: "Burberry", tier: "luxury", category: "Fashion" },
+  { name: "Tiffany & Co.", tier: "luxury", category: "Jewellery" },
+  { name: "Bottega Veneta", tier: "luxury", category: "Fashion" },
+  { name: "Givenchy", tier: "luxury", category: "Fashion" },
+  { name: "Dolce & Gabbana", tier: "luxury", category: "Fashion" },
+  { name: "Balenciaga", tier: "luxury", category: "Fashion" },
 ];

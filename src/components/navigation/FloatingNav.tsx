@@ -112,8 +112,7 @@ export function FloatingNav() {
 
             <button
               onClick={() => scrollToSection("events")}
-              className="cursor-pointer text-label px-5 py-2.5 border border-gold/30 text-gold/80 hover:bg-gold/10 hover:text-gold hover:border-gold/60 transition-all duration-300 rounded-sm"
-              style={{ color: "var(--gold)" }}
+              className="cursor-pointer text-label px-5 py-2.5 border border-gold/30 hover:bg-gold/10 hover:text-gold hover:border-gold/60 transition-all duration-300 rounded-sm text-gold backdrop-blur-2xl"
             >
               PARTNER WITH US
             </button>
