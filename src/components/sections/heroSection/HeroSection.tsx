@@ -71,7 +71,7 @@ export default function HeroSection() {
             aria-label="Dubai Mall cinematic background video"
             poster="/hero-dubai-mall.avif"
           >
-            <source src="/HERO.mp4" type="video/mp4" />
+            <source src="/HERO-HERO.mp4" type="video/mp4" />
           </video>
         </div>
       </motion.div>
