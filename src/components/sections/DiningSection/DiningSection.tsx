@@ -38,7 +38,7 @@ export default function DiningSection() {
           <div className="relative overflow-hidden rounded-sm">
             <div className="aspect-[21/9]">
               <img
-                src="/dining-rooftop.webp"
+                src="/dining-rooftop.avif"
                 alt="Premium dining at Dubai Mall"
                 className="w-full h-full object-cover"
                 loading="lazy"

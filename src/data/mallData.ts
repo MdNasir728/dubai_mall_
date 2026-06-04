@@ -6,7 +6,14 @@ import type {
   LeasingCategory,
   NavSection,
 } from "@/types";
-import type { AcousticFeature, AudienceSegment, EventHighlight, SponsorshipTierData, TechnicalSpec, VenueCapability } from "@/types/modules.type";
+import type {
+  AcousticFeature,
+  AudienceSegment,
+  EventHighlight,
+  SponsorshipTierData,
+  TechnicalSpec,
+  VenueCapability,
+} from "@/types/modules.type";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -102,19 +109,19 @@ export const RETAIL_HIGHLIGHTS = [
     label: "Fashion Avenue",
     desc: "World-class luxury fashion in a dedicated promenade housing 70+ designer labels",
     stat: "70+ labels",
-    image: "/retail-corridor.webp",
+    image: "/retail-corridor.avif",
   },
   {
     label: "Dubai Mall Expansion",
     desc: "A billion-dollar expansion bringing 240 new stores — the growth opportunity of a decade",
     stat: "240 new stores",
-    image: "/luxury-district.webp",
+    image: "/luxury-district.avif",
   },
   {
     label: "Ground Lease",
     desc: "Premium ground-floor positions with unmatched visibility and foot traffic conversion",
     stat: "89% occupancy",
-    image: "/retail-corridor.webp",
+    image: "/retail-corridor.avif",
   },
 ];
 
@@ -472,8 +479,6 @@ export const AUDIENCE_SEGMENTS: AudienceSegment[] = [
   },
 ];
 
-
-
 export const TECHNICAL_SPECS: TechnicalSpec[] = [
   { label: "Seating Capacity", value: "2,800" },
   { label: "Stage Depth", value: "45m" },
@@ -559,13 +564,21 @@ export const VENUE_CAPABILITIES: VenueCapability[] = [
   {
     name: "Convention Center",
     capacity: "12,000+",
-    features: ["Flexible breakout rooms", "AV infrastructure", "Registration areas"],
+    features: [
+      "Flexible breakout rooms",
+      "AV infrastructure",
+      "Registration areas",
+    ],
     icon: "🎤",
   },
   {
     name: "Performance Theater",
     capacity: "2,800",
-    features: ["State-of-the-art acoustics", "Retractable seating", "Professional lighting"],
+    features: [
+      "State-of-the-art acoustics",
+      "Retractable seating",
+      "Professional lighting",
+    ],
     icon: "🎬",
   },
   {

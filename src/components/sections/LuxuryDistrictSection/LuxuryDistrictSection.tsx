@@ -17,7 +17,7 @@ export default function LuxuryDistrictSection() {
       {/* Dark luxury image background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/luxury-district.webp"
+          src="/luxury-district.avif"
           alt="Dubai Mall Luxury District"
           className="w-full h-full object-cover opacity-20"
           loading="lazy"
@@ -59,7 +59,7 @@ export default function LuxuryDistrictSection() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
               <img
-                src="/luxury-district.webp"
+                src="/luxury-district.avif"
                 alt="Luxury boutique — Fashion Avenue"
                 className="w-full h-full object-cover"
                 loading="lazy"

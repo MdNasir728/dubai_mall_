@@ -59,7 +59,7 @@ export default function WhyDubaiMallSection() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
               <img
-                src="/location-map.webp"
+                src="/location-map.avif"
                 alt="Dubai Mall location — Downtown Dubai"
                 className="w-full h-full object-cover"
                 loading="lazy"

@@ -44,7 +44,7 @@ export default function EntertainmentSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/entertainment-aquarium.webp"
+              src="/entertainment-aquarium.avif"
               alt="Dubai Aquarium — world's largest"
               className="w-full h-full object-cover"
               loading="lazy"

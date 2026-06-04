@@ -42,7 +42,7 @@ export default function RetailSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/retail-corridor.webp"
+              src="/retail-corridor.avif"
               alt="Dubai Mall retail corridor"
               className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"

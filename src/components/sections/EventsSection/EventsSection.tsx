@@ -47,7 +47,7 @@ export default function EventsSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/events-concert.webp"
+              src="/events-concert.avif"
               alt="Events at Dubai Mall — concert and activations"
               className="w-full h-full object-cover"
               loading="lazy"

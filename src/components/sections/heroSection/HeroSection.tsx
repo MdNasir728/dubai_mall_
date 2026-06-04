@@ -66,10 +66,10 @@ export default function HeroSection() {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="none"
             className="absolute inset-0 w-full h-full object-cover"
             aria-label="Dubai Mall cinematic background video"
-            poster="/hero-dubai-mall.webp"
+            poster="/hero-dubai-mall.avif"
           >
             <source src="/HERO.mp4" type="video/mp4" />
           </video>
