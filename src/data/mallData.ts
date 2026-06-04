@@ -1,4 +1,12 @@
-import type { BrandItem, DiningVenue, EntertainmentAttraction, EventCapability, LeasingCategory, NavSection } from "@/types";
+import type {
+  BrandItem,
+  DiningVenue,
+  EntertainmentAttraction,
+  EventCapability,
+  LeasingCategory,
+  NavSection,
+} from "@/types";
+import type { AcousticFeature, AudienceSegment, EventHighlight, SponsorshipTierData, TechnicalSpec, VenueCapability } from "@/types/modules.type";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -221,7 +229,6 @@ export const ENTERTAINMENT_ATTRACTIONS: EntertainmentAttraction[] = [
   },
 ];
 
-
 export const EVENT_TYPES = [
   { label: "Brand Activations", count: "240+", desc: "Annual campaigns" },
   { label: "Fashion Shows", count: "18", desc: "International showcases" },
@@ -232,30 +239,44 @@ export const EVENT_TYPES = [
 ];
 
 export const PAST_BRANDS = [
-  "Lamborghini", "Ferrari", "Apple", "Samsung", "Rolex", "Dior",
-  "Netflix", "PlayStation", "Adidas", "Nike", "Bulgari", "TAG Heuer",
+  "Lamborghini",
+  "Ferrari",
+  "Apple",
+  "Samsung",
+  "Rolex",
+  "Dior",
+  "Netflix",
+  "PlayStation",
+  "Adidas",
+  "Nike",
+  "Bulgari",
+  "TAG Heuer",
 ];
 
 export const EVENT_CAPABILITIES: EventCapability[] = [
   {
     name: "Grand Atrium",
     capacity: "5,000 guests",
-    description: "Four-storey glass-roofed atrium — spectacular for brand launches, fashion shows, and galas.",
+    description:
+      "Four-storey glass-roofed atrium — spectacular for brand launches, fashion shows, and galas.",
   },
   {
     name: "Dubai Fountain Boardwalk",
     capacity: "Unlimited outdoor",
-    description: "Iconic waterfront promenade perfect for concerts, activations, and experiential marketing.",
+    description:
+      "Iconic waterfront promenade perfect for concerts, activations, and experiential marketing.",
   },
   {
     name: "Convention Halls",
     capacity: "2,500 delegates",
-    description: "Fully equipped halls for international conferences, product launches, and trade events.",
+    description:
+      "Fully equipped halls for international conferences, product launches, and trade events.",
   },
   {
     name: "Luxury Event Suites",
     capacity: "50–500 guests",
-    description: "Bespoke private event spaces for VIP dinners, brand experiences, and exclusive showcases.",
+    description:
+      "Bespoke private event spaces for VIP dinners, brand experiences, and exclusive showcases.",
   },
 ];
 
@@ -365,5 +386,192 @@ export const LEASING_CATEGORIES: LeasingCategory[] = [
       leaseLength: "4 weeks–3 months",
     },
     featured: false,
+  },
+];
+
+export const SPONSORSHIP_TIERS: SponsorshipTierData[] = [
+  {
+    name: "Platinum",
+    investment: "$2M+",
+    benefits: [
+      "Exclusive naming rights to venue",
+      "VIP lounge and hospitality",
+      "Full season media exposure",
+      "Dedicated activation space",
+      "Strategic partnership consultation",
+    ],
+    featured: true,
+    icon: "👑",
+  },
+  {
+    name: "Gold",
+    investment: "$1M–$2M",
+    benefits: [
+      "Co-branding opportunities",
+      "Premium event signage",
+      "Corporate hospitality packages",
+      "Media placements (quarterly)",
+      "Brand integration programs",
+    ],
+    featured: false,
+    icon: "⭐",
+  },
+  {
+    name: "Silver",
+    investment: "$500K–$1M",
+    benefits: [
+      "Event sponsorship opportunities",
+      "Branded in-mall presence",
+      "Digital marketing inclusion",
+      "Quarterly report insights",
+      "Networking access",
+    ],
+    featured: false,
+    icon: "✨",
+  },
+  {
+    name: "Bronze",
+    investment: "$250K–$500K",
+    benefits: [
+      "Seasonal campaign participation",
+      "Logo placement on website",
+      "Event ticketing discounts",
+      "Annual sponsor recognition",
+      "Community event participation",
+    ],
+    featured: false,
+    icon: "💎",
+  },
+];
+
+export const AUDIENCE_SEGMENTS: AudienceSegment[] = [
+  {
+    segment: "Luxury Shoppers",
+    percentage: "28%",
+    description: "Ultra-high-net-worth individuals, luxury brand loyalists",
+    spending: "AED 15,000+ per visit",
+  },
+  {
+    segment: "International Tourists",
+    percentage: "35%",
+    description: "Global travelers, destination seekers, experience-driven",
+    spending: "AED 8,000–12,000 per visit",
+  },
+  {
+    segment: "Corporate/B2B",
+    percentage: "18%",
+    description: "Decision-makers, corporate entertainment, team events",
+    spending: "Premium package buyers",
+  },
+  {
+    segment: "Families & Lifestyle",
+    percentage: "19%",
+    description:
+      "Entertainment seekers, dining enthusiasts, entertainment fans",
+    spending: "AED 2,000–5,000 per visit",
+  },
+];
+
+
+
+export const TECHNICAL_SPECS: TechnicalSpec[] = [
+  { label: "Seating Capacity", value: "2,800" },
+  { label: "Stage Depth", value: "45m" },
+  { label: "Stage Width", value: "62m" },
+  { label: "Ceiling Height", value: "28m" },
+  { label: "Loading Dock", value: "Industrial-grade" },
+  { label: "Sound System", value: "L-Acoustics" },
+];
+
+export const ACOUSTIC_FEATURES: AcousticFeature[] = [
+  {
+    feature: "Variable Acoustics",
+    benefit:
+      "Adjustable sound environment for symphony, chamber, or contemporary performances",
+  },
+  {
+    feature: "Retractable Seating",
+    benefit:
+      "Flexible configurations for different event types and audience sizes",
+  },
+  {
+    feature: "Advanced Lighting Rig",
+    benefit: "18,000+ individual lighting fixtures with real-time control",
+  },
+  {
+    feature: "High-Fidelity Recording",
+    benefit: "Full broadcast and streaming capabilities in 4K",
+  },
+  {
+    feature: "Strategic Acoustics",
+    benefit: "Every seat has optimal sightlines and acoustics",
+  },
+  {
+    feature: "Green Room Facilities",
+    benefit: "Premium artist accommodation and dressing facilities",
+  },
+];
+
+export const PERFORMING_ART_EVENT_TYPES = [
+  "Classical Symphony Orchestras",
+  "Opera & Ballet",
+  "Contemporary & Jazz",
+  "Broadway & Musical Theater",
+  "Product Launches & Galas",
+  "Corporate Events & Conferences",
+  "Streaming & Live Recording",
+];
+
+export const PAST_EVENTS: EventHighlight[] = [
+  {
+    year: "2024",
+    event: "Fashion Forward Dubai",
+    attendance: "850K+",
+    description: "Largest fashion and lifestyle event in the region",
+  },
+  {
+    year: "2024",
+    event: "Dubai Shopping Festival",
+    attendance: "2.5M+",
+    description: "Global retail celebration with 1,200+ brands",
+  },
+  {
+    year: "2023",
+    event: "Expo 2020 Activation",
+    attendance: "1.2M+",
+    description: "Integrated programming across all venues",
+  },
+  {
+    year: "2023",
+    event: "Global Brand Summit",
+    attendance: "15K+",
+    description: "C-level executives and decision-makers",
+  },
+];
+
+export const VENUE_CAPABILITIES: VenueCapability[] = [
+  {
+    name: "Grand Atrium",
+    capacity: "50,000+",
+    features: ["Modular staging", "360° sightlines", "Full production support"],
+    icon: "🎭",
+  },
+  {
+    name: "Convention Center",
+    capacity: "12,000+",
+    features: ["Flexible breakout rooms", "AV infrastructure", "Registration areas"],
+    icon: "🎤",
+  },
+  {
+    name: "Performance Theater",
+    capacity: "2,800",
+    features: ["State-of-the-art acoustics", "Retractable seating", "Professional lighting"],
+    icon: "🎬",
+  },
+  {
+    name: "Outdoor Plaza",
+    capacity: "100,000+",
+    features: ["Weather systems", "Lighting rigs", "Sound distribution"],
+    icon: "🌟",
   },
 ];

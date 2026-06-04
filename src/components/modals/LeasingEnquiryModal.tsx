@@ -26,7 +26,7 @@ import {
   cardReveal,
   EASE_CINEMATIC,
 } from "@/constants/animations";
-import { X, CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2 } from "lucide-react";
 
 interface LeasingFormData {
   companyName: string;
@@ -262,12 +262,6 @@ export function LeasingInquiryModal() {
                   <DialogTitle className="text-2xl font-light">
                     Leasing Inquiry
                   </DialogTitle>
-                  {/* <button
-                    onClick={handleClose}
-                    className="rounded-full p-2 hover:bg-foreground/10 transition-colors"
-                  >
-                    <X className="h-5 w-5" />
-                  </button> */}
                 </div>
 
                 {/* Progress indicator */}

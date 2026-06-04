@@ -103,3 +103,88 @@ export interface DubaiMallStore {
   activeSection: string;
   scrollProgress: number;
 }
+
+export interface SponsorshipTierData {
+  name: string;
+  investment: string;
+  benefits: string[];
+  featured: boolean;
+  icon: string;
+}
+
+export interface AudienceSegment {
+  segment: string;
+  percentage: string;
+  description: string;
+  spending: string;
+}
+
+export interface TechnicalSpec {
+  label: string;
+  value: string;
+}
+
+export interface AcousticFeature {
+  feature: string;
+  benefit: string;
+}
+
+export interface EventHighlight {
+  year: string;
+  event: string;
+  attendance: string;
+  description: string;
+}
+
+export interface VenueCapability {
+  name: string;
+  capacity: string;
+  features: string[];
+  icon: string;
+}
+
+export interface Venue {
+  id: string;
+  name: string;
+  capacity: string;
+  capacityNumber: number;
+  features: string[];
+  technicalSpecs: {
+    stageDepth?: string;
+    stageWidth?: string;
+    ceilingHeight?: string;
+    soundSystem?: string;
+    lightingFixtures?: number;
+  };
+  image?: string;
+  icon: string;
+}
+
+export interface Event {
+  id: string;
+  year: string;
+  name: string;
+  attendance: string;
+  description: string;
+  category: "concert" | "conference" | "activation" | "performance";
+}
+
+export interface EventType {
+  id: string;
+  name: string;
+  description: string;
+  minCapacity: number;
+  maxCapacity: number;
+}
+
+export interface EventFormData {
+  eventName: string;
+  organizerName: string;
+  email: string;
+  phone: string;
+  eventType: string;
+  audience: string;
+  preferredDate: string;
+  venueId: string;
+  technicalNeeds: string;
+}
