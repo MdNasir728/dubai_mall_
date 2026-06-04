@@ -1,15 +1,27 @@
 import "./App.css";
 import { Footer } from "@/components/Footer";
 import { FloatingNav } from "@/components/navigation/FloatingNav";
-import { HeroSection } from "@/components/sections/heroSection/HeroSection";
 import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
-import { WhyDubaiMallSection } from "@/components/sections/whyDubaiMallSection/WhyDubaiMallSection";
-import { RetailSection } from "@/components/sections/RetailSection/RetailSection";
-import { LuxuryDistrictSection } from "@/components/sections/LuxuryDistrictSection/LuxuryDistrictSection";
-import { DiningSection } from "@/components/sections/DiningSection/DiningSection";
-import { EntertainmentSection } from "@/components/sections/EntertainmentSection/EntertainmentSection";
-import { EventsSection } from "./components/sections/EventsSection/EventsSection";
+
+import { EventBookingModal } from "./components/modals/EventBookingModal";
+import { GlobalFeedback } from "./components/GlobalFeedback";
+import {
+  DiningSection,
+  EntertainmentSection,
+  EventsSection,
+  LuxuryDistrictSection,
+  RetailSection,
+  WhyDubaiMallSection,
+} from "./components/sections";
+import {
+  EventsModule,
+  LeasingModule,
+  PerformanceModule,
+  SponsorshipModule,
+} from "./components/modules";
+import { LeasingInquiryModal } from "./components/modals/LeasingEnquiryModal";
+import HeroSection from "./components/sections/heroSection/HeroSection";
 
 function App() {
   useLenis();
@@ -26,11 +38,19 @@ function App() {
         <WhyDubaiMallSection />
         <RetailSection />
         <LuxuryDistrictSection />
+        <LeasingModule />
         <DiningSection />
         <EntertainmentSection />
+        <SponsorshipModule />
+        <PerformanceModule />
+
         <EventsSection />
+        <EventsModule />
       </main>
       <Footer />
+      <LeasingInquiryModal />
+      <EventBookingModal />
+      <GlobalFeedback />
     </div>
   );
 }

@@ -10,7 +10,7 @@ import { EventTypesGrid } from "./EventTypeGrid";
 import { VenueCapabilities } from "./VenueCapability";
 import { BookingCTA } from "./BookingCTA";
 
-export function EventsSection() {
+export default function EventsSection() {
   return (
     <section
       id="events"
@@ -47,7 +47,7 @@ export function EventsSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/events-concert.webp"
+              src="/events-concert.avif"
               alt="Events at Dubai Mall — concert and activations"
               className="w-full h-full object-cover"
               loading="lazy"

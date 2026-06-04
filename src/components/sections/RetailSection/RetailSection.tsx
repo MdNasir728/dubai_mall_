@@ -7,7 +7,7 @@ import { staggerContainer, cardReveal } from "@/constants/animations";
 import { RETAIL_HIGHLIGHTS } from "@/data/mallData";
 import { TenantMix } from "./TenantCard";
 
-export function RetailSection() {
+export default function RetailSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
@@ -42,7 +42,7 @@ export function RetailSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/retail-corridor.webp"
+              src="/retail-corridor.avif"
               alt="Dubai Mall retail corridor"
               className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"

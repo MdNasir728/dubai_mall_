@@ -63,3 +63,19 @@ export interface EventCapability {
   capacity: string;
   description: string;
 }
+
+
+export interface LeasingCategory {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+  details: {
+    avgSpaceSize: string;
+    targetTenants: string[];
+    premiumBenefits: string[];
+    financialTerms: string;
+    leaseLength: string;
+  };
+  featured: boolean;
+}

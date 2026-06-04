@@ -6,7 +6,7 @@ import { DINING_VENUES, DINING_STATS } from "@/data/mallData";
 import { staggerContainer, cardReveal } from "@/constants/animations";
 import { FountainCallout } from "./Fountain";
 
-export function DiningSection() {
+export default function DiningSection() {
   return (
     <section
       id="dining"
@@ -38,7 +38,7 @@ export function DiningSection() {
           <div className="relative overflow-hidden rounded-sm">
             <div className="aspect-[21/9]">
               <img
-                src="/dining-rooftop.webp"
+                src="/dining-rooftop.avif"
                 alt="Premium dining at Dubai Mall"
                 className="w-full h-full object-cover"
                 loading="lazy"

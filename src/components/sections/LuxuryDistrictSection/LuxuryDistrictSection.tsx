@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { EASE_CINEMATIC } from "@/constants/animations";
 import { BrandShowcase } from "./BrandShowcase";
+import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 
-export function LuxuryDistrictSection() {
+export default function LuxuryDistrictSection() {
+  const {openModal} = useDubaiMallStore();
   return (
     <section
       id="luxury-district"
@@ -15,7 +17,7 @@ export function LuxuryDistrictSection() {
       {/* Dark luxury image background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/luxury-district.webp"
+          src="/luxury-district.avif"
           alt="Dubai Mall Luxury District"
           className="w-full h-full object-cover opacity-20"
           loading="lazy"
@@ -57,7 +59,7 @@ export function LuxuryDistrictSection() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[3/4] overflow-hidden rounded-sm">
               <img
-                src="/luxury-district.webp"
+                src="/luxury-district.avif"
                 alt="Luxury boutique — Fashion Avenue"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -126,6 +128,7 @@ export function LuxuryDistrictSection() {
 
               <motion.button
                 className="self-start px-6 py-3 text-sm font-medium border rounded-sm transition-all duration-300 border-gold text-gold"
+                onClick={() => openModal("leasing-inquiry")}
                 whileHover={{
                   scale: 1.03,
                   backgroundColor: "oklch(0.75 0.12 85 / 0.08)",
