@@ -5,10 +5,7 @@ export function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p
-              className="text-lg font-light tracking-widest"
-              style={{ color: "var(--gold)", letterSpacing: "0.3em" }}
-            >
+            <p className="text-lg font-light tracking-widest text-gold">
               DUBAI MALL
             </p>
             <p className="text-xs text-muted-foreground/40 mt-1">

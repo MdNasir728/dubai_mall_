@@ -88,3 +88,35 @@ export const WHY_METRICS = [
     desc: "Within 4-hour flight radius",
   },
 ];
+
+
+
+export const RETAIL_HIGHLIGHTS = [
+  {
+    label: "Fashion Avenue",
+    desc: "World-class luxury fashion in a dedicated promenade housing 70+ designer labels",
+    stat: "70+ labels",
+    image: "/retail-corridor.webp",
+  },
+  {
+    label: "Dubai Mall Expansion",
+    desc: "A billion-dollar expansion bringing 240 new stores — the growth opportunity of a decade",
+    stat: "240 new stores",
+    image: "/luxury-district.webp",
+  },
+  {
+    label: "Ground Lease",
+    desc: "Premium ground-floor positions with unmatched visibility and foot traffic conversion",
+    stat: "89% occupancy",
+    image: "/retail-corridor.webp",
+  },
+];
+
+export const TENANT_CATEGORIES = [
+  { name: "Ultra-Luxury", count: "40+", bar: 40 },
+  { name: "Contemporary Luxury", count: "120+", bar: 60 },
+  { name: "Premium Fashion", count: "280+", bar: 75 },
+  { name: "Lifestyle & Sport", count: "180+", bar: 55 },
+  { name: "Electronics & Tech", count: "60+", bar: 35 },
+  { name: "Beauty & Wellness", count: "90+", bar: 45 },
+];
