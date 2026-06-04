@@ -53,7 +53,7 @@ export function EntertainmentSection() {
             <div className="absolute inset-0 vignette" />
 
             {/* Floating headline */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <div className=" absolute inset-0 flex flex-col items-center justify-center text-center">
               <p className="text-label mb-3 text-gold">SIGNATURE ATTRACTION</p>
               <h3
                 className="text-foreground"

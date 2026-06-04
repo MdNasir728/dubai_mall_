@@ -56,3 +56,10 @@ export interface EntertainmentAttraction {
   highlight: string;
   icon: string;
 }
+
+
+export interface EventCapability {
+  name: string;
+  capacity: string;
+  description: string;
+}
