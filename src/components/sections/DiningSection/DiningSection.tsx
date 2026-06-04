@@ -77,9 +77,7 @@ export function DiningSection() {
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="text-label mb-1 text-gold">
-                    {venue.highlight}
-                  </p>
+                  <p className="text-label mb-1 text-gold">{venue.highlight}</p>
                   <h3 className="text-2xl font-light text-foreground">
                     {venue.name}
                   </h3>
