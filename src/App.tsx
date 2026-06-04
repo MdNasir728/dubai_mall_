@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="relative bg-background text-foreground overflow-x-hidden">
+      {/* <FloatingNav /> */}
       <main>
         <section id="center">
           <div>Home</div>
