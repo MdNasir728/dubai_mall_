@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { EASE_CINEMATIC } from "@/constants/animations";
 import { BrandShowcase } from "./BrandShowcase";
+import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 
 export function LuxuryDistrictSection() {
+  const {openModal} = useDubaiMallStore();
   return (
     <section
       id="luxury-district"
@@ -126,6 +128,7 @@ export function LuxuryDistrictSection() {
 
               <motion.button
                 className="self-start px-6 py-3 text-sm font-medium border rounded-sm transition-all duration-300 border-gold text-gold"
+                onClick={() => openModal("leasing-inquiry")}
                 whileHover={{
                   scale: 1.03,
                   backgroundColor: "oklch(0.75 0.12 85 / 0.08)",

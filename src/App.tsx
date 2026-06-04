@@ -10,6 +10,8 @@ import { LuxuryDistrictSection } from "@/components/sections/LuxuryDistrictSecti
 import { DiningSection } from "@/components/sections/DiningSection/DiningSection";
 import { EntertainmentSection } from "@/components/sections/EntertainmentSection/EntertainmentSection";
 import { EventsSection } from "./components/sections/EventsSection/EventsSection";
+import { LeasingPathsModule } from "./components/modules/LeasingModule";
+import { LeasingInquiryModal } from "./components/modals/LeasingEnquiryModal";
 
 function App() {
   useLenis();
@@ -25,12 +27,15 @@ function App() {
         <HeroSection />
         <WhyDubaiMallSection />
         <RetailSection />
+        <LeasingPathsModule />
+
         <LuxuryDistrictSection />
         <DiningSection />
         <EntertainmentSection />
         <EventsSection />
       </main>
       <Footer />
+      <LeasingInquiryModal />
     </div>
   );
 }

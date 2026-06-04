@@ -1,4 +1,4 @@
-import type { BrandItem, DiningVenue, EntertainmentAttraction, EventCapability, NavSection } from "@/types";
+import type { BrandItem, DiningVenue, EntertainmentAttraction, EventCapability, LeasingCategory, NavSection } from "@/types";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -256,5 +256,114 @@ export const EVENT_CAPABILITIES: EventCapability[] = [
     name: "Luxury Event Suites",
     capacity: "50–500 guests",
     description: "Bespoke private event spaces for VIP dinners, brand experiences, and exclusive showcases.",
+  },
+];
+
+export const LEASING_CATEGORIES: LeasingCategory[] = [
+  {
+    id: "luxury",
+    name: "Luxury & Flagship",
+    icon: "👑",
+    description: "Premium positioning for ultra-luxury brands",
+    details: {
+      avgSpaceSize: "3,000–10,000 sqm",
+      targetTenants: [
+        "Louis Vuitton",
+        "Hermès",
+        "Gucci",
+        "Rolex",
+        "Cartier",
+        "Ferrari Store",
+      ],
+      premiumBenefits: [
+        "Prime location guarantee",
+        "Custom fit-out support",
+        "Dedicated concierge team",
+        "VIP event hosting",
+        "Exclusive marketing campaigns",
+      ],
+      financialTerms: "Base rent + % of sales (3–5%)",
+      leaseLength: "10–15 years",
+    },
+    featured: true,
+  },
+  {
+    id: "retail",
+    name: "Contemporary Retail",
+    icon: "🛍️",
+    description: "Diverse mid-tier and established brands",
+    details: {
+      avgSpaceSize: "500–3,000 sqm",
+      targetTenants: [
+        "Zara",
+        "H&M",
+        "Uniqlo",
+        "Sephora",
+        "Apple",
+        "Nike Store",
+      ],
+      premiumBenefits: [
+        "Flexible space configurations",
+        "Co-marketing support",
+        "Integrated mall technology",
+        "Cross-promotion opportunities",
+        "Traffic insights and analytics",
+      ],
+      financialTerms: "Base rent + % of sales (2–4%)",
+      leaseLength: "5–10 years",
+    },
+    featured: false,
+  },
+  {
+    id: "fnb",
+    name: "Food & Beverage",
+    icon: "🍽️",
+    description: "Dining destinations and lifestyle concepts",
+    details: {
+      avgSpaceSize: "300–2,000 sqm",
+      targetTenants: [
+        "Michelin-starred concepts",
+        "Celebrity chef brands",
+        "Specialty cafes",
+        "Quick-service formats",
+        "Beverage concepts",
+      ],
+      premiumBenefits: [
+        "High foot-traffic locations",
+        "Operational support",
+        "Event integration",
+        "Lifestyle positioning",
+        "Premium exhaust management",
+      ],
+      financialTerms: "Base rent + % of sales (4–8%)",
+      leaseLength: "5–7 years",
+    },
+    featured: false,
+  },
+  {
+    id: "popup",
+    name: "Pop-Up & Seasonal",
+    icon: "🎪",
+    description: "Short-term, flexible brand experiences",
+    details: {
+      avgSpaceSize: "100–1,000 sqm",
+      targetTenants: [
+        "Emerging brands",
+        "Seasonal activations",
+        "Festival concepts",
+        "Limited editions",
+        "Experiential pop-ups",
+      ],
+      premiumBenefits: [
+        "Rapid lease approval",
+        "Flexible terms (4–12 weeks)",
+        "Turnkey setup support",
+        "Marketing inclusion",
+        "Access to premium locations",
+      ],
+      financialTerms: "Daily/weekly rates + % of sales",
+      leaseLength: "4 weeks–3 months",
+    },
+    featured: false,
   },
 ];
