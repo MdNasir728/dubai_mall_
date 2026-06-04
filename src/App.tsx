@@ -1,9 +1,10 @@
 import "./App.css";
 import { Footer } from "@/components/Footer";
 import { FloatingNav } from "@/components/navigation/FloatingNav";
-import { HeroSection } from "@/components/sections/HeroSection";
+import { HeroSection } from "@/components/sections/heroSection/HeroSection";
 import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
+import { WhyDubaiMallSection } from "./components/sections/whyDubaiMallSection/WhyDubaiMallSection";
 
 function App() {
   useLenis();
@@ -18,7 +19,7 @@ function App() {
       <FloatingNav />
       <main>
         <HeroSection />
-
+        <WhyDubaiMallSection />
       </main>
       <Footer />
     </div>

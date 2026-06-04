@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { heroText, staggerContainer } from "@/constants/animations";
-import { HeroMetrics } from "@/components/HeroMetrics";
+import { HeroMetrics } from "@/components/sections/heroSection/HeroMetrics";
 
 gsap.registerPlugin(ScrollTrigger);
 

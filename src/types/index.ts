@@ -4,7 +4,6 @@ export interface NavSection {
   index: number;
 }
 
-
 export type SectionId =
   | "hero"
   | "why-dubai-mall"
@@ -21,7 +20,6 @@ export interface NavigationState {
   setNavVisible: (visible: boolean) => void;
 }
 
-
 export interface AnimatedCounterProps {
   target: number;
   suffix?: string;
@@ -29,4 +27,12 @@ export interface AnimatedCounterProps {
   duration?: number;
   className?: string;
   decimals?: number;
+}
+
+export interface ScrollRevealProps {
+  children: React.ReactNode;
+  delay?: number;
+  direction?: "up" | "left" | "right" | "none";
+  className?: string;
+  once?: boolean;
 }

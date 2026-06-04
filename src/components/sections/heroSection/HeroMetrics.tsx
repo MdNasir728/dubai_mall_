@@ -12,7 +12,7 @@ export function HeroMetrics() {
 
   return (
     <motion.div
-      className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 w-full max-w-full border-t pt-8 mt-15"
+      className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-10 w-full max-w-full border-t pt-8 mt-15"
       initial="hidden"
       animate="visible"
       variants={{
