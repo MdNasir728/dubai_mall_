@@ -1,4 +1,4 @@
-import type { BrandItem, NavSection } from "@/types";
+import type { BrandItem, DiningVenue, NavSection } from "@/types";
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -89,8 +89,6 @@ export const WHY_METRICS = [
   },
 ];
 
-
-
 export const RETAIL_HIGHLIGHTS = [
   {
     label: "Fashion Avenue",
@@ -121,7 +119,6 @@ export const TENANT_CATEGORIES = [
   { name: "Beauty & Wellness", count: "90+", bar: 45 },
 ];
 
-
 export const LUXURY_BRANDS: BrandItem[] = [
   { name: "Louis Vuitton", tier: "ultra-luxury", category: "Fashion" },
   { name: "Chanel", tier: "ultra-luxury", category: "Fashion" },
@@ -139,4 +136,42 @@ export const LUXURY_BRANDS: BrandItem[] = [
   { name: "Givenchy", tier: "luxury", category: "Fashion" },
   { name: "Dolce & Gabbana", tier: "luxury", category: "Fashion" },
   { name: "Balenciaga", tier: "luxury", category: "Fashion" },
+];
+
+export const DINING_STATS = [
+  { value: "200+", label: "Restaurants & Cafes" },
+  { value: "40", label: "Nations Represented" },
+  { value: "3", label: "Michelin Partnerships" },
+  { value: "$320M", label: "F&B Annual Revenue" },
+];
+
+export const DINING_VENUES: DiningVenue[] = [
+  {
+    name: "Atmosphere",
+    cuisine: "International Fine Dining",
+    description:
+      "Dining at 442 metres above ground — the world's highest restaurant in the Burj Khalifa.",
+    highlight: "World's Highest Restaurant",
+  },
+  {
+    name: "Thiptara",
+    cuisine: "Royal Thai",
+    description:
+      "Authentic Thai cuisine with panoramic views of the Dubai Fountain — a sensory masterpiece.",
+    highlight: "Fountain Terrace Views",
+  },
+  {
+    name: "Zuma",
+    cuisine: "Contemporary Japanese",
+    description:
+      "Izakaya dining concept elevated to global icon status. A culinary journey through modern Japan.",
+    highlight: "Celebrity Favourite",
+  },
+  {
+    name: "Nobu",
+    cuisine: "New World Japanese",
+    description:
+      "Nobu Matsuhisa's legendary concept. Black cod miso and signature cocktails.",
+    highlight: "Global Icon",
+  },
 ];
