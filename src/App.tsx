@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/Footer";
 import { useLenis } from "./hooks/useLenis";
 import { useEffect } from "react";
 
@@ -11,11 +12,14 @@ function App() {
   }, []);
 
   return (
-    <>
-      <section id="center">
-        <div>Home</div>
-      </section>
-    </>
+    <div className="relative bg-background text-foreground overflow-x-hidden">
+      <main>
+        <section id="center">
+          <div>Home</div>
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
