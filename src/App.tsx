@@ -1,6 +1,8 @@
 import "./App.css";
-import { Footer } from "./components/Footer";
-import { useLenis } from "./hooks/useLenis";
+import { Footer } from "@/components/Footer";
+import { FloatingNav } from "@/components/navigation/FloatingNav";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
 
 function App() {
@@ -13,11 +15,10 @@ function App() {
 
   return (
     <div className="relative bg-background text-foreground overflow-x-hidden">
-      {/* <FloatingNav /> */}
+      <FloatingNav />
       <main>
-        <section id="center">
-          <div>Home</div>
-        </section>
+        <HeroSection />
+
       </main>
       <Footer />
     </div>

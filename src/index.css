@@ -120,3 +120,117 @@
     border-radius: 2px;
   }
 }
+
+/* SECTION SYSTEM */
+
+.section-full {
+  min-height: 100dvh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CINEMATIC OVERLAYS */
+
+.cinematic-overlay {
+  background: linear-gradient(
+    180deg,
+    oklch(0.02 0 0 / 0.4) 0%,
+    transparent 25%,
+    transparent 70%,
+    oklch(0.02 0 0 / 0.9) 100%
+  );
+}
+
+.vignette {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 35%,
+    oklch(0.02 0 0 / 0.75) 100%
+  );
+}
+
+/* TYPOGRAPHY UTILITIES */
+
+.hero-headline {
+  font-size: clamp(3rem, 8vw, 11rem);
+  font-weight: 200;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+}
+
+.section-headline {
+  font-size: clamp(2.5rem, 5.5vw, 8rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+.text-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.stat-number {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 200;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-number-sm {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+
+/* GOLD GRADIENTS */
+
+.text-gold-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.92 0.15 85) 0%,
+    oklch(0.75 0.12 85) 40%,
+    oklch(0.52 0.09 85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.98 0 0) 0%,
+    oklch(0.82 0 0) 50%,
+    oklch(0.65 0 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* navigation */
+
+.nav-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: oklch(0.35 0 0);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+.nav-dot.active { background: oklch(0.75 0.12 85); width: 26px; border-radius: 3px; }
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

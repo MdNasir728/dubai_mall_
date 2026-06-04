@@ -3,7 +3,7 @@
 // ====================================================
 
 import { create } from "zustand";
-import type { NavigationState, SectionId } from "../types";
+import type { NavigationState, SectionId } from "@/types";
 
 export const useNavigationStore = create<NavigationState>((set) => ({
   activeSection: "hero",

@@ -4,10 +4,11 @@
 
 import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_SECTIONS } from "../../data/mallData";
-import { useNavigationStore } from "../../stores/navigationStore";
-import type { SectionId } from "../../types";
-import { useScrollProgress } from "../../hooks/useScrollProgress";
+import { NAV_SECTIONS } from "@/data/mallData";
+import { useNavigationStore } from "@/stores/navigationStore";
+import type { SectionId } from "@/types";
+import { useScrollProgress } from "@/hooks/useScrollProgress";
+import { Button } from "../ui/button";
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -74,7 +75,7 @@ export function FloatingNav() {
                   style={{
                     color: activeSection === id ? "var(--gold)" : undefined,
                   }}
-                >
+                > 
                   {label}
                 </span>
                 <div
@@ -106,7 +107,7 @@ export function FloatingNav() {
           >
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-label text-muted-foreground hover:text-gold transition-colors duration-300"
+              className="cursor-pointer text-label text-muted-foreground hover:text-gold transition-colors duration-300"
               style={{ color: "var(--gold)", letterSpacing: "0.2em" }}
             >
               DUBAI MALL
@@ -114,7 +115,7 @@ export function FloatingNav() {
 
             <button
               onClick={() => scrollToSection("events")}
-              className="text-label px-5 py-2.5 border border-gold/30 text-gold/80 hover:bg-gold/10 hover:text-gold hover:border-gold/60 transition-all duration-300 rounded-sm"
+              className="cursor-pointer text-label px-5 py-2.5 border border-gold/30 text-gold/80 hover:bg-gold/10 hover:text-gold hover:border-gold/60 transition-all duration-300 rounded-sm"
               style={{ color: "var(--gold)" }}
             >
               PARTNER WITH US

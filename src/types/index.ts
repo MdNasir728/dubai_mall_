@@ -20,3 +20,13 @@ export interface NavigationState {
   isNavVisible: boolean;
   setNavVisible: (visible: boolean) => void;
 }
+
+
+export interface AnimatedCounterProps {
+  target: number;
+  suffix?: string;
+  prefix?: string;
+  duration?: number;
+  className?: string;
+  decimals?: number;
+}
