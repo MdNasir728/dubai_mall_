@@ -1,6 +1,4 @@
-// ====================================================
 // CINEMATIC FLOATING NAVIGATION
-// ====================================================
 
 import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,7 +6,6 @@ import { NAV_SECTIONS } from "@/data/mallData";
 import { useNavigationStore } from "@/stores/navigationStore";
 import type { SectionId } from "@/types";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
-import { Button } from "../ui/button";
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -75,7 +72,7 @@ export function FloatingNav() {
                   style={{
                     color: activeSection === id ? "var(--gold)" : undefined,
                   }}
-                > 
+                >
                   {label}
                 </span>
                 <div

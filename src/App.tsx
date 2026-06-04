@@ -4,7 +4,8 @@ import { FloatingNav } from "@/components/navigation/FloatingNav";
 import { HeroSection } from "@/components/sections/heroSection/HeroSection";
 import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
-import { WhyDubaiMallSection } from "./components/sections/whyDubaiMallSection/WhyDubaiMallSection";
+import { WhyDubaiMallSection } from "@/components/sections/whyDubaiMallSection/WhyDubaiMallSection";
+import { RetailSection } from "@/components/sections/RetailSection/RetailSection";
 
 function App() {
   useLenis();
@@ -20,6 +21,7 @@ function App() {
       <main>
         <HeroSection />
         <WhyDubaiMallSection />
+        <RetailSection />
       </main>
       <Footer />
     </div>
