@@ -8,7 +8,7 @@ import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 import { LEASING_CATEGORIES } from "@/data/mallData";
 import { DownloadButton } from "../DownLoadButton";
 
-export function LeasingPathsModule() {
+export default function LeasingPathsModule() {
   const [activeCategory, setActiveCategory] = useState("luxury");
   const { openModal } = useDubaiMallStore();
   const activeLease = LEASING_CATEGORIES.find(

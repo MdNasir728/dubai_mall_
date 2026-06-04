@@ -10,7 +10,7 @@ import {
 } from "@/data/mallData";
 import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 
-export function PerformanceModule() {
+export default function PerformanceModule() {
   const { openModal } = useDubaiMallStore();
 
   return (

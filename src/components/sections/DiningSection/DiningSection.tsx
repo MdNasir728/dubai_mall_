@@ -6,7 +6,7 @@ import { DINING_VENUES, DINING_STATS } from "@/data/mallData";
 import { staggerContainer, cardReveal } from "@/constants/animations";
 import { FountainCallout } from "./Fountain";
 
-export function DiningSection() {
+export default function DiningSection() {
   return (
     <section
       id="dining"

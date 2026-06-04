@@ -10,7 +10,7 @@ import { EventTypesGrid } from "./EventTypeGrid";
 import { VenueCapabilities } from "./VenueCapability";
 import { BookingCTA } from "./BookingCTA";
 
-export function EventsSection() {
+export default function EventsSection() {
   return (
     <section
       id="events"

@@ -7,7 +7,7 @@ import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 import { PAST_EVENTS, VENUE_CAPABILITIES } from "@/data/mallData";
 import { DownloadButton } from "../DownLoadButton";
 
-export function EventsModule() {
+export default function EventsModule() {
   const { openModal } = useDubaiMallStore();
   return (
     <div className="relative min-h-screen py-32 overflow-hidden">

@@ -7,7 +7,7 @@ import { staggerContainer, cardReveal } from "@/constants/animations";
 import { RETAIL_HIGHLIGHTS } from "@/data/mallData";
 import { TenantMix } from "./TenantCard";
 
-export function RetailSection() {
+export default function RetailSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 

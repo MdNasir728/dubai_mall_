@@ -13,7 +13,7 @@ import {
 import { StatsRow } from "./StatsRow";
 import { DemographicsSection } from "./Demographics";
 
-export function WhyDubaiMallSection() {
+export default function WhyDubaiMallSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   return (

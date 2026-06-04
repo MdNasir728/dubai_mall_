@@ -6,7 +6,7 @@ import { EASE_CINEMATIC } from "@/constants/animations";
 import { BrandShowcase } from "./BrandShowcase";
 import { useDubaiMallStore } from "@/stores/dubaiMallStore";
 
-export function LuxuryDistrictSection() {
+export default function LuxuryDistrictSection() {
   const {openModal} = useDubaiMallStore();
   return (
     <section

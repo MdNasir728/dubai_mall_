@@ -14,7 +14,7 @@ function scrollToSection(id: string) {
   if (el) el.scrollIntoView({ behavior: "smooth" });
 }
 
-export function HeroSection() {
+export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const imgRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -66,7 +66,7 @@ export function HeroSection() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
             aria-label="Dubai Mall cinematic background video"
             poster="/hero-dubai-mall.webp"

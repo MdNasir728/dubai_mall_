@@ -7,7 +7,7 @@ import { ScrollReveal } from "../animation/ScrollReveal";
 import { AUDIENCE_SEGMENTS, SPONSORSHIP_TIERS } from "@/data/mallData";
 import { DownloadButton } from "../DownLoadButton";
 
-export function SponsorshipModule() {
+export default function SponsorshipModule() {
   const { openModal } = useDubaiMallStore();
   return (
     <div className="relative min-h-screen py-32 overflow-hidden">

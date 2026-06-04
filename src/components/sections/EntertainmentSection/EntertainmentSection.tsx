@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { AttractionsGrid } from "./Attractiona";
 
-export function EntertainmentSection() {
+export default function EntertainmentSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   return (
