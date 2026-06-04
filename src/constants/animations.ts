@@ -51,3 +51,13 @@ export const cardReveal: Variants = {
     transition: { duration: DURATION.slow, ease: EASE_CINEMATIC },
   },
 };
+
+export const staggerContainerFast: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.07,
+      delayChildren: 0.05,
+    },
+  },
+};
