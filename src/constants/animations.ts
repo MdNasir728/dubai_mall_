@@ -32,3 +32,22 @@ export const staggerContainer: Variants = {
     },
   },
 };
+
+export const lineExpand: Variants = {
+  hidden: { scaleX: 0, opacity: 0, transformOrigin: "left" },
+  visible: {
+    scaleX: 1,
+    opacity: 1,
+    transition: { duration: 1.0, ease: EASE_CINEMATIC },
+  },
+};
+
+export const cardReveal: Variants = {
+  hidden: { opacity: 0, y: 30, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: DURATION.slow, ease: EASE_CINEMATIC },
+  },
+};
