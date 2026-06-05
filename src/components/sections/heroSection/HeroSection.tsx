@@ -1,13 +1,9 @@
 // HERO SECTION — Cinematic Opening
-
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { heroText, staggerContainer } from "@/constants/animations";
 import { HeroMetrics } from "@/components/sections/heroSection/HeroMetrics";
-
-gsap.registerPlugin(ScrollTrigger);
+import heroDubalMall from "@/assets/hero-dubai-mall.avif";
 
 function scrollToSection(id: string) {
   const el = document.getElementById(id);
@@ -16,8 +12,6 @@ function scrollToSection(id: string) {
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const imgRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
@@ -26,26 +20,6 @@ export default function HeroSection() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
-
-  // GSAP: slow-zoom on the background image
-  useEffect(() => {
-    const el = imgRef.current;
-    if (!el) return;
-
-    gsap.to(el, {
-      scale: 1.15,
-      duration: 20,
-      ease: "none",
-      repeat: -1,
-      yoyo: true,
-    });
-  }, []);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.6; // slower
-    }
-  }, []);
 
   return (
     <section
@@ -59,21 +33,29 @@ export default function HeroSection() {
         className="absolute inset-0 z-0 overflow-hidden"
         style={{ y, scale }}
       >
-        <div ref={imgRef} className="relative w-full h-full">
+        <motion.div
+          className="relative w-full h-full"
+          animate={{ scale: [1, 1.15] }}
+          transition={{
+            duration: 20,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "mirror",
+          }}
+        >
           <video
             autoPlay
-            ref={videoRef}
             muted
             loop
             playsInline
-            preload="none"
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
             aria-label="Dubai Mall cinematic background video"
-            poster="/hero-dubai-mall.avif"
+            poster={heroDubalMall}
           >
             <source src="/HERO-HERO.mp4" type="video/mp4" />
           </video>
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Cinematic overlays */}

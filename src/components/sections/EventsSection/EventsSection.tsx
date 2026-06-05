@@ -9,6 +9,7 @@ import { PastBrands } from "./PastBrand";
 import { EventTypesGrid } from "./EventTypeGrid";
 import { VenueCapabilities } from "./VenueCapability";
 import { BookingCTA } from "./BookingCTA";
+import eventConcert from '@/assets/events-concert.avif'
 
 export default function EventsSection() {
   return (
@@ -47,7 +48,7 @@ export default function EventsSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/events-concert.avif"
+              src={eventConcert}
               alt="Events at Dubai Mall — concert and activations"
               className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"

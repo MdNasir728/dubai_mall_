@@ -5,6 +5,7 @@ import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { DINING_VENUES, DINING_STATS } from "@/data/mallData";
 import { staggerContainer, cardReveal } from "@/constants/animations";
 import { FountainCallout } from "./Fountain";
+import diningImage from "@/assets/dining-rooftop.avif";
 
 export default function DiningSection() {
   return (
@@ -38,7 +39,7 @@ export default function DiningSection() {
           <div className="relative overflow-hidden rounded-sm">
             <div className="aspect-[21/9]">
               <img
-                src="/dining-rooftop.avif"
+                src={diningImage}
                 alt="Premium dining at Dubai Mall"
                 className="w-full h-full object-cover animate-slow-zoom"
                 loading="lazy"

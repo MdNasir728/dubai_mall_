@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { AttractionsGrid } from "./Attractiona";
+import entertainmantAquarium from '@/assets/entertainment-aquarium.avif'
 
 export default function EntertainmentSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,7 +45,7 @@ export default function EntertainmentSection() {
         <ScrollReveal className="mb-20">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <img
-              src="/entertainment-aquarium.avif"
+              src={entertainmantAquarium}
               alt="Dubai Aquarium — world's largest"
               className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"
