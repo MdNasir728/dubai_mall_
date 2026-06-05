@@ -46,7 +46,7 @@ export default function EntertainmentSection() {
             <img
               src="/entertainment-aquarium.avif"
               alt="Dubai Aquarium — world's largest"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"
             />
             <div className="absolute inset-0 cinematic-overlay" />

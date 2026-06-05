@@ -200,12 +200,12 @@ export default function LeasingPathsModule() {
               </button>
               <DownloadButton
                 assetId="leasing-guide"
-                fileName="Dubai-Mall-Leasing-Guide.pdf"
-                fileUrl="/downloads/Dubai-Mall-Leasing-Guide.pdf"
+                fileName="Dubai-Mall-Leasing-Guide.txt"
+                fileUrl="/downloads/Dubai-Mall-Leasing-Guide.txt"
                 variant="ghost"
                 size="md"
               >
-                Get Leasing Brochure
+                Download Leasing Guide
               </DownloadButton>
             </div>
           </div>

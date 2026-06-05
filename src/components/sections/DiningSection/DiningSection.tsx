@@ -40,7 +40,7 @@ export default function DiningSection() {
               <img
                 src="/dining-rooftop.avif"
                 alt="Premium dining at Dubai Mall"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover animate-slow-zoom"
                 loading="lazy"
               />
               <div className="absolute inset-0 cinematic-overlay" />

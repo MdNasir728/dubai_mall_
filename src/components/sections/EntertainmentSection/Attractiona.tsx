@@ -1,6 +1,7 @@
 import { cardReveal, staggerContainer } from "@/constants/animations";
 import { ENTERTAINMENT_ATTRACTIONS } from "@/data/mallData";
 import { motion } from "framer-motion";
+import { DownloadButton } from "@/components/DownLoadButton";
 
 export function AttractionsGrid() {
   return (
@@ -96,9 +97,15 @@ export function AttractionsGrid() {
               ))}
             </div>
           </div>
-          <button className="cursor-pointer mt-6 w-full py-3 text-sm font-medium text-center transition-all duration-300 text-gold border-2 border-gold rounded-sm">
+          <DownloadButton
+            assetId="attractions-guide"
+            fileName="Dubai-Mall-Attractions-Guide.txt"
+            fileUrl="/downloads/Dubai-Mall-Attractions-Guide.txt"
+            variant="default"
+            size="md"
+          >
             Full Attractions Guide
-          </button>
+          </DownloadButton>
         </div>
       </motion.div>
     </motion.div>

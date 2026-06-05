@@ -55,12 +55,12 @@ export interface InteractionFeedback {
 }
 
 export interface Venue {
-  id: string;
+  id?: string;
   name: string;
   capacity: string;
-  capacityNumber: number;
+  capacityNumber?: number;
   features: string[];
-  technicalSpecs: {
+  technicalSpecs?: {
     stageDepth?: string;
     stageWidth?: string;
     ceilingHeight?: string;
@@ -72,11 +72,11 @@ export interface Venue {
 }
 
 export interface SponsorshipTier {
-  id: string;
+  id?: string;
   name: string;
   investment: string;
-  investmentMin: number;
-  investmentMax: number;
+  investmentMin?: number;
+  investmentMax?: number;
   benefits: string[];
   featured: boolean;
   icon: string;
@@ -104,13 +104,7 @@ export interface DubaiMallStore {
   scrollProgress: number;
 }
 
-export interface SponsorshipTierData {
-  name: string;
-  investment: string;
-  benefits: string[];
-  featured: boolean;
-  icon: string;
-}
+
 
 export interface AudienceSegment {
   segment: string;
@@ -129,44 +123,15 @@ export interface AcousticFeature {
   benefit: string;
 }
 
-export interface EventHighlight {
-  year: string;
-  event: string;
-  attendance: string;
-  description: string;
-}
 
-export interface VenueCapability {
-  name: string;
-  capacity: string;
-  features: string[];
-  icon: string;
-}
-
-export interface Venue {
-  id: string;
-  name: string;
-  capacity: string;
-  capacityNumber: number;
-  features: string[];
-  technicalSpecs: {
-    stageDepth?: string;
-    stageWidth?: string;
-    ceilingHeight?: string;
-    soundSystem?: string;
-    lightingFixtures?: number;
-  };
-  image?: string;
-  icon: string;
-}
 
 export interface Event {
-  id: string;
+  id?: string;
   year: string;
   name: string;
   attendance: string;
   description: string;
-  category: "concert" | "conference" | "activation" | "performance";
+  category?: "concert" | "conference" | "activation" | "performance";
 }
 
 export interface EventType {

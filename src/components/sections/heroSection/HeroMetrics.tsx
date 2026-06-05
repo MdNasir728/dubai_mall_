@@ -12,7 +12,7 @@ export function HeroMetrics() {
 
   return (
     <motion.div
-      className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-10 w-full max-w-full border-t pt-8 mt-15"
+      className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 lg:gap-10 w-full max-w-full border-t pt-8 mt-15"
       initial="hidden"
       animate="visible"
       variants={{
@@ -21,10 +21,10 @@ export function HeroMetrics() {
       }}
       style={{ borderColor: "oklch(0.25 0 0)" }}
     >
-      {metrics.map((m) => (
+      {metrics.map((m, i) => (
         <motion.div
           key={m.label}
-          className="text-center w-full"
+          className={`text-center w-full ${i === 2 ? "md:col-span-2" : ""}`}
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: {

@@ -227,7 +227,10 @@ export default function PerformanceModule() {
               >
                 Book a Performance
               </button>
-              <button className="px-8 py-3 text-sm font-medium tracking-widest uppercase border border-foreground/20 text-foreground/60 hover:border-gold/50 hover:text-gold/80 transition-all duration-300">
+              <button
+                className="px-8 py-3 text-sm font-medium tracking-widest uppercase border border-foreground/20 text-foreground/60 hover:border-gold/50 hover:text-gold/80 transition-all duration-300"
+                onClick={() => openModal("leasing-inquiry")}
+              >
                 Technical Specifications
               </button>
             </div>

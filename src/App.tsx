@@ -4,12 +4,13 @@ import { FloatingNav } from "@/components/navigation/FloatingNav";
 import { useLenis } from "@/hooks/useLenis";
 import { useEffect } from "react";
 
-import { EventBookingModal } from "./components/modals/EventBookingModal";
+import { EventBookingModal } from "./components/modals/EventBookingModal/EventBookingModal";
 import { GlobalFeedback } from "./components/GlobalFeedback";
 import {
   DiningSection,
   EntertainmentSection,
   EventsSection,
+  HeroSection,
   LuxuryDistrictSection,
   RetailSection,
   WhyDubaiMallSection,
@@ -20,8 +21,7 @@ import {
   PerformanceModule,
   SponsorshipModule,
 } from "./components/modules";
-import { LeasingInquiryModal } from "./components/modals/LeasingEnquiryModal";
-import HeroSection from "./components/sections/heroSection/HeroSection";
+import { LeasingInquiryModal } from "./components/modals/LeasingEnquiryModal/LeasingEnquiryModal";
 
 function App() {
   useLenis();

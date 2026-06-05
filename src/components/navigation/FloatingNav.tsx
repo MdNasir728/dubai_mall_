@@ -23,28 +23,42 @@ export function FloatingNav() {
     prevScrollY.current = scrollY;
   }, [scrollY, setNavVisible]);
 
-  // Intersection observer to track active section
   useEffect(() => {
-    const observers: IntersectionObserver[] = [];
+    const handleScroll = () => {
+      let currentSection = "";
+      let minDistance = Infinity;
+      // Focus point is one-third down the screen
+      const viewportCenter = window.innerHeight / 3;
 
-    NAV_SECTIONS.forEach(({ id }) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id as SectionId);
+      NAV_SECTIONS.forEach(({ id }) => {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          // If the focus point is strictly inside this section
+          if (rect.top <= viewportCenter && rect.bottom >= viewportCenter) {
+            currentSection = id;
+            minDistance = -1; // Highest priority
+          } else if (minDistance !== -1) {
+            // Fallback: which section top is closest to the focus point
+            const distance = Math.abs(rect.top - viewportCenter);
+            if (distance < minDistance) {
+              minDistance = distance;
+              currentSection = id;
+            }
           }
-        },
-        { threshold: 0.4, rootMargin: "-10% 0px -40% 0px" },
-      );
+        }
+      });
 
-      observer.observe(el);
-      observers.push(observer);
-    });
+      if (currentSection) {
+        setActiveSection(currentSection as SectionId);
+      }
+    };
 
-    return () => observers.forEach((o) => o.disconnect());
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Run once on mount to set initial state correctly
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [setActiveSection]);
 
   return (

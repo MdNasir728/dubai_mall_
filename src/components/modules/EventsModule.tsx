@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ScrollReveal } from "../animation/ScrollReveal";
 import { staggerContainer, cardReveal } from "../../constants/animations";
 import { useDubaiMallStore } from "@/stores/dubaiMallStore";
-import { PAST_EVENTS, VENUE_CAPABILITIES } from "@/data/mallData";
+import { PAST_EVENTS, VENUES } from "@/data/events";
 import { DownloadButton } from "../DownLoadButton";
 
 export default function EventsModule() {
@@ -53,7 +53,7 @@ export default function EventsModule() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            {VENUE_CAPABILITIES.map((venue) => (
+            {VENUES.map((venue) => (
               <motion.div
                 key={venue.name}
                 variants={cardReveal}
@@ -101,7 +101,7 @@ export default function EventsModule() {
           >
             {PAST_EVENTS.map((event) => (
               <motion.div
-                key={event.event}
+                key={event.name}
                 variants={cardReveal}
                 className="luxury-card glass-panel p-8 rounded-sm border-l-2 border-gold"
               >
@@ -109,7 +109,7 @@ export default function EventsModule() {
                   <div>
                     <p className="text-label mb-2 text-gold">{event.year}</p>
                     <h4 className="text-xl font-medium text-foreground">
-                      {event.event}
+                      {event.name}
                     </h4>
                   </div>
                   <p className="text-2xl font-light text-gold-gradient text-right">

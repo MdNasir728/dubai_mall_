@@ -61,7 +61,7 @@ export default function WhyDubaiMallSection() {
               <img
                 src="/location-map.avif"
                 alt="Dubai Mall location — Downtown Dubai"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover animate-slow-zoom"
                 loading="lazy"
               />
               <div className="absolute inset-0 cinematic-overlay" />
