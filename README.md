@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Dubai Mall Interactive Sales Deck
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic and interactive sales presentation platform designed to showcase the scale, retail opportunities, events, attractions, and sponsorship potential of Dubai Mall.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- Zustand
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start development server
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Build for production
+npm run build
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Design Decisions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Built as an interactive sales deck rather than a traditional website.
+- Focused on storytelling, motion, and visual hierarchy to communicate the scale and business value of Dubai Mall.
+- Used a dark cinematic theme inspired by premium digital experiences.
+- Organized the application into reusable components and feature modules for maintainability and future expansion.
+- Implemented interactive dialogs and modular sections to demonstrate potential business workflows.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## AI Usage
+
+AI was used for:
+
+- Design inspiration and visual direction
+- Layout and interaction brainstorming
+- Generating imagery and visual concepts
+- Accelerating repetitive development tasks
+- Component and architecture exploration
+
+All AI-generated content was manually reviewed, edited, and integrated into the final implementation.
+
+## Future Improvements
+
+Given more time, I would:
+
+- Expand Events, Sponsorship, Leasing, and Venue modules in greater detail
+- Implement production-ready forms using React Hook Form and Zod
+- Connect inquiry flows to a CMS and backend services
+- Add richer media experiences and motion graphics
+- Introduce analytics and engagement tracking
+
+## Notes
+
+This project was created as an assignment submission to demonstrate product thinking, frontend engineering, interaction design, and storytelling through a modern web experience.
