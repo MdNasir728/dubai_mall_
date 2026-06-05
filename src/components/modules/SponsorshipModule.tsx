@@ -129,7 +129,10 @@ export default function SponsorshipModule() {
                   ))}
                 </ul>
                 {tier.featured && (
-                  <button className="bg-gold text-black mt-8 w-full py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:scale-[1.02]">
+                  <button
+                    onClick={() => openModal("leasing-inquiry")}
+                    className="bg-gold text-black mt-8 w-full py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:scale-[1.02]"
+                  >
                     Get Started
                   </button>
                 )}
@@ -185,19 +188,19 @@ export default function SponsorshipModule() {
             </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button
-                onClick={() => openModal("sponsorship-inquiry")}
+                onClick={() => openModal("leasing-inquiry")}
                 className="bg-gold text-black px-8 py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:scale-[1.02]"
               >
                 Discuss Partnership
               </button>
               <DownloadButton
-                assetId="case-studies"
-                fileName="Dubai-Mall-Case-Studies.pdf"
-                fileUrl="/downloads/Dubai-Mall-Case-Studies.pdf"
+                assetId="media-kit"
+                fileName="Dubai-Mall-Media-Kit.txt"
+                fileUrl="/downloads/Dubai-Mall-Media-Kit.txt"
                 variant="ghost"
                 size="md"
               >
-                Download Case Studies
+                Download Media Kit
               </DownloadButton>
             </div>
           </div>
