@@ -19,7 +19,7 @@ export default function LuxuryDistrictSection() {
         <img
           src="/luxury-district.avif"
           alt="Dubai Mall Luxury District"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-20 animate-slow-zoom"
           loading="lazy"
         />
         <div
@@ -61,7 +61,7 @@ export default function LuxuryDistrictSection() {
               <img
                 src="/luxury-district.avif"
                 alt="Luxury boutique — Fashion Avenue"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover animate-slow-zoom"
                 loading="lazy"
               />
               <div className="absolute inset-0 cinematic-overlay" />

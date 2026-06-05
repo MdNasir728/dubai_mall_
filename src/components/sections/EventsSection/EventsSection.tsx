@@ -49,7 +49,7 @@ export default function EventsSection() {
             <img
               src="/events-concert.avif"
               alt="Events at Dubai Mall — concert and activations"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover animate-slow-zoom"
               loading="lazy"
             />
             <div className="absolute inset-0 cinematic-overlay" />

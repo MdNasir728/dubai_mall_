@@ -10,6 +10,7 @@ import {
   DiningSection,
   EntertainmentSection,
   EventsSection,
+  HeroSection,
   LuxuryDistrictSection,
   RetailSection,
   WhyDubaiMallSection,
@@ -21,7 +22,6 @@ import {
   SponsorshipModule,
 } from "./components/modules";
 import { LeasingInquiryModal } from "./components/modals/LeasingEnquiryModal";
-import HeroSection from "./components/sections/heroSection/HeroSection";
 
 function App() {
   useLenis();

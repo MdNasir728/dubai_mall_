@@ -57,7 +57,7 @@ export default function RetailSection() {
                 { v: "89%", l: "Occupancy Rate" },
                 { v: "#1", l: "MENA Retail Hub" },
               ].map((s) => (
-                <div key={s.l}>
+                <div key={s.l} className="backdrop-blur-xs rounded-lg px-4 py-2">
                   <p className="stat-number-sm text-gold-gradient">{s.v}</p>
                   <p className="text-label text-foreground/50 mt-1">{s.l}</p>
                 </div>
