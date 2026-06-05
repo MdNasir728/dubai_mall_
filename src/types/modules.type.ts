@@ -143,23 +143,6 @@ export interface VenueCapability {
   icon: string;
 }
 
-export interface Venue {
-  id: string;
-  name: string;
-  capacity: string;
-  capacityNumber: number;
-  features: string[];
-  technicalSpecs: {
-    stageDepth?: string;
-    stageWidth?: string;
-    ceilingHeight?: string;
-    soundSystem?: string;
-    lightingFixtures?: number;
-  };
-  image?: string;
-  icon: string;
-}
-
 export interface Event {
   id: string;
   year: string;
