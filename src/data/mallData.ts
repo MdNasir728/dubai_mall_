@@ -9,10 +9,8 @@ import type {
 import type {
   AcousticFeature,
   AudienceSegment,
-  EventHighlight,
-  SponsorshipTierData,
+  SponsorshipTier,
   TechnicalSpec,
-  VenueCapability,
 } from "@/types/modules.type";
 
 export const NAV_SECTIONS: NavSection[] = [
@@ -236,7 +234,7 @@ export const ENTERTAINMENT_ATTRACTIONS: EntertainmentAttraction[] = [
   },
 ];
 
-export const EVENT_TYPES = [
+export const EVENT_STATS = [
   { label: "Brand Activations", count: "240+", desc: "Annual campaigns" },
   { label: "Fashion Shows", count: "18", desc: "International showcases" },
   { label: "Concerts & Gigs", count: "120+", desc: "Live performances" },
@@ -396,7 +394,7 @@ export const LEASING_CATEGORIES: LeasingCategory[] = [
   },
 ];
 
-export const SPONSORSHIP_TIERS: SponsorshipTierData[] = [
+export const SPONSORSHIP_TIERS: SponsorshipTier[] = [
   {
     name: "Platinum",
     investment: "$2M+",
@@ -527,64 +525,4 @@ export const PERFORMING_ART_EVENT_TYPES = [
   "Streaming & Live Recording",
 ];
 
-export const PAST_EVENTS: EventHighlight[] = [
-  {
-    year: "2024",
-    event: "Fashion Forward Dubai",
-    attendance: "850K+",
-    description: "Largest fashion and lifestyle event in the region",
-  },
-  {
-    year: "2024",
-    event: "Dubai Shopping Festival",
-    attendance: "2.5M+",
-    description: "Global retail celebration with 1,200+ brands",
-  },
-  {
-    year: "2023",
-    event: "Expo 2020 Activation",
-    attendance: "1.2M+",
-    description: "Integrated programming across all venues",
-  },
-  {
-    year: "2023",
-    event: "Global Brand Summit",
-    attendance: "15K+",
-    description: "C-level executives and decision-makers",
-  },
-];
 
-export const VENUE_CAPABILITIES: VenueCapability[] = [
-  {
-    name: "Grand Atrium",
-    capacity: "50,000+",
-    features: ["Modular staging", "360° sightlines", "Full production support"],
-    icon: "🎭",
-  },
-  {
-    name: "Convention Center",
-    capacity: "12,000+",
-    features: [
-      "Flexible breakout rooms",
-      "AV infrastructure",
-      "Registration areas",
-    ],
-    icon: "🎤",
-  },
-  {
-    name: "Performance Theater",
-    capacity: "2,800",
-    features: [
-      "State-of-the-art acoustics",
-      "Retractable seating",
-      "Professional lighting",
-    ],
-    icon: "🎬",
-  },
-  {
-    name: "Outdoor Plaza",
-    capacity: "100,000+",
-    features: ["Weather systems", "Lighting rigs", "Sound distribution"],
-    icon: "🌟",
-  },
-];

@@ -1,6 +1,6 @@
 import { ScrollReveal } from "@/components/animation/ScrollReveal";
 import { cardReveal, staggerContainer } from "@/constants/animations";
-import { EVENT_TYPES } from "@/data/mallData";
+import { EVENT_STATS } from "@/data/mallData";
 import { motion } from "framer-motion";
 
 export function EventTypesGrid() {
@@ -13,13 +13,13 @@ export function EventTypesGrid() {
       </ScrollReveal>
 
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
       >
-        {EVENT_TYPES.map((type) => (
+        {EVENT_STATS.map((type) => (
           <motion.div
             key={type.label}
             variants={cardReveal}
