@@ -12,6 +12,7 @@ import {
 } from "@/constants/animations";
 import { StatsRow } from "./StatsRow";
 import { DemographicsSection } from "./Demographics";
+import locationMap from '@/assets/location-map.avif'
 
 export default function WhyDubaiMallSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -59,7 +60,7 @@ export default function WhyDubaiMallSection() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
               <img
-                src="/location-map.avif"
+                src={locationMap}
                 alt="Dubai Mall location — Downtown Dubai"
                 className="w-full h-full object-cover animate-slow-zoom"
                 loading="lazy"

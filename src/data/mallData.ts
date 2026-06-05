@@ -12,6 +12,8 @@ import type {
   SponsorshipTier,
   TechnicalSpec,
 } from "@/types/modules.type";
+import retailCorridor from '@/assets/retail-corridor.avif'
+import luxuryDistrict from '@/assets/luxury-district.avif'
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: "hero", label: "Overview", index: 0 },
@@ -107,19 +109,19 @@ export const RETAIL_HIGHLIGHTS = [
     label: "Fashion Avenue",
     desc: "World-class luxury fashion in a dedicated promenade housing 70+ designer labels",
     stat: "70+ labels",
-    image: "/retail-corridor.avif",
+    image: retailCorridor,
   },
   {
     label: "Dubai Mall Expansion",
     desc: "A billion-dollar expansion bringing 240 new stores — the growth opportunity of a decade",
     stat: "240 new stores",
-    image: "/luxury-district.avif",
+    image: luxuryDistrict,
   },
   {
     label: "Ground Lease",
     desc: "Premium ground-floor positions with unmatched visibility and foot traffic conversion",
     stat: "89% occupancy",
-    image: "/retail-corridor.avif",
+    image: retailCorridor,
   },
 ];
 

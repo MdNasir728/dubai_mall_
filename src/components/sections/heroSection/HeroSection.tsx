@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { heroText, staggerContainer } from "@/constants/animations";
 import { HeroMetrics } from "@/components/sections/heroSection/HeroMetrics";
+import heroDubalMall from '@/assets/hero-dubai-mall.avif'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,7 +70,7 @@ export default function HeroSection() {
             preload="none"
             className="absolute inset-0 w-full h-full object-cover"
             aria-label="Dubai Mall cinematic background video"
-            poster="/hero-dubai-mall.avif"
+            poster={heroDubalMall}
           >
             <source src="/HERO-HERO.mp4" type="video/mp4" />
           </video>
